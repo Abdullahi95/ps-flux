@@ -12,6 +12,7 @@ function CourseForm(props) {
         name="title"
         // changing the name will affect what we get from our computed property
         value={props.course.title}
+        errors={props.errors.title}
       />
 
       <SelectInput
@@ -20,6 +21,7 @@ function CourseForm(props) {
         onChange={props.onChange}
         value={props.course.authorId || ""}
         label="Author"
+        errors={props.errors.authorId}
       />
 
       <TextInput
@@ -28,6 +30,7 @@ function CourseForm(props) {
         onChange={props.onChange}
         name="category"
         value={props.course.category}
+        errors={props.errors.category}
       />
 
       <input type="submit" value="Save" className="btn btn-primary" />

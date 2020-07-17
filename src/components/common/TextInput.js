@@ -23,7 +23,7 @@ function TextInput(props) {
           value={props.value}
         />
       </div>
-      {props.error && <div className="alert alert-danger">{props.error}</div>}
+      {props.errors && <div className="alert alert-danger">{props.errors}</div>}
       {/* The code on the right will run if the condition on the left is true. */}
     </div>
   );

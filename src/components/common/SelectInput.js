@@ -17,6 +17,7 @@ function SelectInput(props) {
           <option value="2">Scott Allen</option>
         </select>
       </div>
+      {props.errors && <div className="alert alert-danger">{props.errors}</div>}
     </div>
   );
 }
