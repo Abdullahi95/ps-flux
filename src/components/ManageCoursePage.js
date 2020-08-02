@@ -20,7 +20,7 @@ const ManageCoursePage = (props) => {
     if (slug) {
       setCourse(courseStore.getCoursesBySlug(slug));
     }
-  });
+  }, [props.match.params.slug]);
 
   function handleChange(event) {
     const updatedCourse = {
